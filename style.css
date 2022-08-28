@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    font-family: "Secular One", sans-serif;
+    background-color: rgb(95, 100, 115);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #474A59 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+    font-family: 'Secular One', sans-serif;
+}
+
+.nav-item a {
+    margin-right: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+/* jumbotron */
+
+.jumbotron .container {
+    margin-top: 100px;
+}
+
+
+.jumbotron {
+    background-image: url("img/bg.png");
+    background-position: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+}
+
+.jumbotron h1 {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.jumbotron p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jumbotron img {
+    float: right;
+}
+
+.jumbotron .btn {
+    height: 45px;
+    width: 145px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: #00008b;
+    word-spacing: 2px;
+}
+
+.jumbotron .btn a {
+    text-align: center;
+    color: black;
+    margin-top: 10%;
+}
+
+/* Glow Moment */
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #00008b;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00008b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* about */
+
+.about .content-about {
+    margin: auto;
+}
+
+.about h3 {
+    color: white !important;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+
+.about .card {
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* Contact person */
+
+.contact h3 {
+    color: black !important;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.contact .container-fluid {
+    margin-top: 200px;
+    background-color: #EDC7B7;
+    height: auto;
+    padding-bottom: 200px;
+}
+
+.contact .content-text h6 {
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: #AC3B61;
+}
+
+.content-recoment {
+    margin: auto;
+    margin-top: 50px;
+    height: 240px;
+    width: auto;
+    background-color: #123C69;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content-recoment img {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.content-recoment .btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #00008b;
+}
+
+.content-recoment .btn:hover {
+    background-color: #AC3B61;
+}
+
+
+/* Jadwalmapel Page */
+.jadwal .container {
+    margin-top: 50px;
+    width: 70%;
+}
+
+.jadwal span {
+    font-weight: 700;
+    color: #00008b;
+}
+
+.jadwal .break {
+    color: #AC3B61;
+    font-weight: 900;
+    /* letter-spacing: 2px; */
+    font-size: 1em;
+}
+
+
+/* for mobile */
+@media only screen and (max-width: 1000px) {
+
+    .nav-item a:hover {
+        border-bottom: none;
+    }
+
+    .jumbotron {
+        height: 680px;
+        text-align: center;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .jumbotron img {
+        display: none;
+    }
+
+    .jumbotron h1 {
+        font-size: 47px;
+        margin-top: -40px;
+        border-bottom: none;
+    }
+
+    .jumbotron p {
+        opacity: 0.5;
+    }
+
+    .content-recoment {
+        width: auto;
+    }
+
+    .contact .container-fluid {
+        height: auto;
+    }
+
+    .content-recoment .btn {
+        float: right;
+        position: fixed;
+    }
+
+    .jadwal .container {
+        margin-top: 20px;
+        width: auto;
+    }
+
+    .footer .container .bi {
+        margin-top: 20px;
+    }
+}
+
+/* for tablet */
+
+
+/* CSS JADWAL PELAJARAN */
+
+
+
+/* Footer */
+footer {
+    background-color: #474A59;
+    color: #F6F2FF;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+
+footer .bi-instagram,
+.bi-whatsapp,
+.bi-github {
+    display: flex;
+    justify-content: right;
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(211, 211, 211);
+}
