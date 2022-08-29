@@ -3,6 +3,7 @@
 body {
     font-family: "Secular One", sans-serif;
     background-color: rgb(95, 100, 115);
+    overflow-x: hidden; 
 }
 
 html {
