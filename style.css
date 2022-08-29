@@ -27,6 +27,14 @@ html {
     color: rgb(255, 255, 255) !important;
 }
 
+.dropdown-menu a:hover {
+    background-color: #474A59;
+}
+
+.dropdown-menu {
+    background-color: #474A59;
+}
+
 
 /* jumbotron */
 
@@ -280,6 +288,10 @@ html {
     .footer .container .bi {
         margin-top: 20px;
     }
+
+    .glow-on-hover {
+        width: 150px;
+    }
 }
 
 /* for tablet */
@@ -313,4 +325,53 @@ footer .bi-instagram,
 
 footer a:hover {
     color: rgb(211, 211, 211);
+}
+
+/* Gallery CSS */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 50%;
+    }
+  }
+
+.banner {
+    width: 100%;
+    height: 400px;
+    margin-top: 15px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.gallery h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: white !important;
+}
+
+.gallery span {
+    font-weight: 700;
+    color: #00008b;
 }
