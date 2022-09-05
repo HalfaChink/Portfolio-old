@@ -356,6 +356,9 @@ footer a:hover {
       flex: 100%;
       max-width: 50%;
     }
+      .glow-on-hover {
+        width: 100px;
+      }
   }
 
 .banner {
